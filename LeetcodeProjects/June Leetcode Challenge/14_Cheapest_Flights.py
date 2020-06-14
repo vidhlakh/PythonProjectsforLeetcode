@@ -20,6 +20,8 @@ class Solution:
                     q += [(neighbor, k+1, cost+p)]
         if prices[dst] < float('inf'):
             return prices[dst]
+        else:
+            return -1
 
 
 s = Solution()
